@@ -9,7 +9,7 @@ class Button():
         height = image.get_height()
 
         #scale 
-        self.image = pygame.transform.scale(image, (int(width * scale)), int(height * scale))
+        self.image = pygame.transform.scale(image, ((int(width * scale)), int(height * scale)))
 
         #image area
         self.rect = self.image.get_rect()
@@ -19,7 +19,7 @@ class Button():
         #clicked definition
         self.clicked = False
 
-    def draw_button(self, screen):
+    def draw(self, screen):
 
         #action definition
         action = False
